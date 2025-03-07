@@ -1,0 +1,56 @@
+/* for swiper */
+body{
+  background-color: rgb(43, 43, 43);
+}
+main{
+    padding: 30px;
+}
+
+main .swiper-container {
+    width: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/1;
+    object-fit: cover;
+    margin-bottom: -4px;
+  }
+  .swiper .swiper-pagination-bullet-active {
+    background-color: white;
+  }
+  
+  .swiper-container .swiper .button {
+    color: rgb(74, 74, 74);
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    z-index: 100;
+  }
+  
+  .swiper-container .swiper .button:hover {
+    opacity: 1;
+  }
+  
+  .swiper-container .swiper .btn1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .swiper-container .swiper .btn2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/47bfcb75ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- boxicons cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper cdn css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <main>
+        <!-- image Slider -->
+        <div class="swiper-container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="www.google.com" class="swiper-slide">
+                        <img src="/images/slide-1.png" alt="">
+                    </a>
+                    <a href="www.google.com" class="swiper-slide">
+                        <img src="/images/slide-2.png" alt="">
+                    </a>
+                    <a href="www.google.com" class="swiper-slide">
+                        <img src="/images/slide-3.png" alt="">
+                    </a>
+                    <a href="www.google.com" class="swiper-slide">
+                        <img src="/images/slide-4.png" alt="">
+                    </a>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Custom Left and Right controls -->
+                <div class="button btn1" id="prevBtn"><i class="fas fa-angle-left"></i></div>
+                <div class="button btn2" id="nextBtn"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<!-- javascript -->
+<script src="script.js"></script>
+<!-- swiper cdn js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- swiper.js javascript -->
+<script>
+    // for swiper
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        keyboard: {
+            enabled: true,
+        },
+
+        // If we need pagination
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '#nextBtn',
+            prevEl: '#prevBtn',
+        },
+        speed: 1000,
+
+    });
+</script>
+
+</html>
